@@ -82,6 +82,12 @@ def for_canonical(f):
 # Keyboard inputs : "é"; keyboard.Key.backspace; key.vk : 96 à 105 pour numpad 0 à 9; 110 pour numpad.
 hotkeys = {
     # general
+    "Yes": {
+        "action" : "absolute_click",
+        "key" : keyboard.Key.enter,
+        "x" : 1520,
+        "y" : 940,
+    },
     "Show card infos": {
         "action" : "absolute_click",
         "key" : keyboard.Key.space,
@@ -99,6 +105,18 @@ hotkeys = {
         "key" : "d",
         "x" : 2450,   # Victus : 1840
         "y" : 800,   # Victus : 540
+    },
+    "Buy in shop": {
+        "action" : "absolute_click",
+        "key" : "$",
+        "x" : 2000,
+        "y" : 1245,
+    },
+    "Skip pack animation": {
+        "action" : "absolute_click",
+        "key" : keyboard.Key.backspace,
+        "x" : 2370,
+        "y" : 1415,
     },
 
     # battle
@@ -212,12 +230,15 @@ exiting_asked = False
 
 
 if __name__ == "__main__":
-    print("- Hotkeys for Master Duel (v0.2.5 | 2560x1600) -\n")
+    print("- Hotkeys for Master Duel (v0.2.6 | 2560x1600) -\n")
     print(
         "General :\n"
+        "enter : Yes (general)\n"
         "space : Show card infos\n"
         "q : Previous arrow\n"
         "d : Next arrow\n"
+        "$ : Buy pack in shop\n"
+        "backspace : Skip pack animation\n"
         "\n"
         "Deck :\n"
         "arrow keys : Navigate card list\n"

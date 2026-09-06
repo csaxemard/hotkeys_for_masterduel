@@ -1,4 +1,4 @@
-# Hotkeys for master duel (v0.2.5)
+# Hotkeys for master duel (v0.2.6)
 
 (Script for master duel)<br>
 Provides hotkeys to easily reach often used UI elements.
@@ -8,9 +8,12 @@ Makes up for the lack of keyboard support from the app.
 ## Hotkeys :
 <pre>
 General :
+enter : Yes (general)
 space : Show card infos
 q : Previous arrow
 d : Next arrow
+$ : Buy pack in shop
+backspace : Skip pack animation
 
 Deck :
 arrow keys : Navigate card list
