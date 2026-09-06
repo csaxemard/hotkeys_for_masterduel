@@ -1,4 +1,4 @@
-# Hotkeys for master duel (v0.2.4)
+# Hotkeys for master duel (v0.2.5)
 
 (Script for master duel)<br>
 Provides hotkeys to easily reach often used UI elements.
@@ -14,6 +14,7 @@ d : Next arrow
 
 Deck :
 arrow keys : Navigate card list
+ijkl : Navigate deck card list
 < : Toggle card bookmark
 ! : Add card to deck
 : : Remove card from deck

@@ -152,6 +152,32 @@ hotkeys = {
         "x_offset" : 120,   # Victus : 90
         "y_offset" : 0,
     },
+
+    "Navigate deck card list up" : {
+        "action" : "relative_click",
+        "key" : "i",
+        "x_offset" : 0,
+        "y_offset" : -143,
+    },
+    "Navigate deck card list down" : {
+        "action" : "relative_click",
+        "key" : "k",
+        "x_offset" : 0,
+        "y_offset" : 143,
+    },
+    "Navigate deck card list left" : {
+        "action" : "relative_click",
+        "key" : "j",
+        "x_offset" : -103,
+        "y_offset" : 0,
+    },
+    "Navigate deck card list right" : {
+        "action" : "relative_click",
+        "key" : "l",
+        "x_offset" : 103,
+        "y_offset" : 0,
+    },
+
     "Toggle card bookmark" : {
         "action" : "absolute_click",
         "key" : "<",
@@ -186,7 +212,7 @@ exiting_asked = False
 
 
 if __name__ == "__main__":
-    print("- Hotkeys for Master Duel (v0.2.4 | 2560x1600) -\n")
+    print("- Hotkeys for Master Duel (v0.2.5 | 2560x1600) -\n")
     print(
         "General :\n"
         "space : Show card infos\n"
@@ -195,6 +221,7 @@ if __name__ == "__main__":
         "\n"
         "Deck :\n"
         "arrow keys : Navigate card list\n"
+        "ijkl : Navigate deck card list\n"
         "< : Toggle card bookmark\n"
         "! : Add card to deck\n"
         ": : Remove card from deck\n"
