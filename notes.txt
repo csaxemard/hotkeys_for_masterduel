@@ -1,0 +1,28 @@
+Taches :
+    feat: Add more deck hotkeys (v0.2.3)
+
+    Dump :
+    Mettre une option pour choisir soi-même ses raccourcis ?
+    on entre une commande et ça commence à proposer les raccourcis pour les définir, shift+alt+c pour lancer la fonction et la cancel
+
+Idées :
+    Make it available to everyone by implementing custom hotkeys
+    1.0.0 breakthrough (J'attends de jouer complètement pour voir si j'ai tout ce qu'il me faut comme hotkeys)
+    Log errors ?
+    Un fichier json avec les hotkeys que le user peut modifier ?
+
+Notes :
+    Build command : 
+        pyinstaller -F .\src\main.py -y -n hotkeys_for_master_duel
+    
+
+	Commit instructions
+        Changer les numéros de version (dans readme et dans les instructions dans main)
+		Vérifier si tout me convient, en exécutant le exe et en testant les fonctionnalités
+		Vérifier que je n'ai pas laissé de devtool-on
+		Regarder tous les changements
+        
+        Commit with message
+        git push origin main
+		git tag v0.2.3
+		git push --tags

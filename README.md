@@ -1,4 +1,4 @@
-# Hotkeys for master duel (v0.2.3)
+# Hotkeys for master duel (v0.2.4)
 
 (Script for master duel)<br>
 Provides hotkeys to easily reach often used UI elements.
@@ -34,3 +34,6 @@ Hotkeys are limited only to the masterduel app (except for global hotkeys)
 <br>
 ## Features to come :
 - Custom hotkeys
+
+##
+Date de début : 20250110

@@ -24,7 +24,7 @@ def on_press(key):
         return
 
     # Limit non-global hotkeys only to masterduel
-    active_window = gw.getActiveWindow() # devtool-off to try on screenshots
+    active_window = gw.getActiveWindow() # devtool-off, comment this to try on screenshots
     if not (active_window.title == "masterduel") :
         return
     
@@ -85,90 +85,90 @@ hotkeys = {
     "Show card infos": {
         "action" : "absolute_click",
         "key" : keyboard.Key.space,
-        "x" : 110,
-        "y" : 320,
+        "x" : 230,   # Victus : 110
+        "y" : 500,   # Victus : 320
     },
     "Previous arrow": {
         "action" : "absolute_click",
         "key" : "q",
-        "x" : 80,
-        "y" : 540,
+        "x" : 110,   # Victus : 80
+        "y" : 800,   # Victus : 540
     },
     "Next arrow": {
         "action" : "absolute_click",
         "key" : "d",
-        "x" : 1840,
-        "y" : 540,
+        "x" : 2450,   # Victus : 1840
+        "y" : 800,   # Victus : 540
     },
 
     # battle
     "phase_switcher": {
         "action" : "absolute_click",
         "key" : "s",
-        "x" : 1480,
-        "y" : 480,
+        "x" : 1990,   # Victus : 1480
+        "y" : 730,   # Victus : 480
     },
     "battle_phase": {
         "action" : "absolute_click",
         "key" : "a",
-        "x" : 1070,
-        "y" : 780,
+        "x" : 1430,   # Victus : 1070
+        "y" : 1100,   # Victus : 780
     },
     "main_phase2": {
         "action" : "absolute_click",
         "key" : "z",
-        "x" : 1290,
-        "y" : 780,
+        "x" : 1720,   # Victus : 1290
+        "y" : 1100,   # Victus : 780
     },
     "end_phase": {
         "action" : "absolute_click",
         "key" : "e",
-        "x" : 1510,
-        "y" : 780,
+        "x" : 2000,   # Victus : 1510
+        "y" : 1100,   # Victus : 780
     },
-    
+
     # deck
     "Navigate card list up" : {
         "action" : "relative_click",
         "key" : keyboard.Key.up,
         "x_offset" : 0,
-        "y_offset" : -145,
+        "y_offset" : -190,   # Victus : -145
     },
     "Navigate card list down" : {
         "action" : "relative_click",
         "key" : keyboard.Key.down,
         "x_offset" : 0,
-        "y_offset" : 145,
+        "y_offset" : 190,   # Victus : 145
     },
     "Navigate card list left" : {
         "action" : "relative_click",
         "key" : keyboard.Key.left,
-        "x_offset" : -90,
+        "x_offset" : -120,   # Victus : -90
         "y_offset" : 0,
     },
     "Navigate card list right" : {
         "action" : "relative_click",
         "key" : keyboard.Key.right,
-        "x_offset" : 90,
+        "x_offset" : 120,   # Victus : 90
         "y_offset" : 0,
     },
     "Toggle card bookmark" : {
         "action" : "absolute_click",
         "key" : "<",
-        "x" : 100,
-        "y" : 870,
+        "x" : 130,   # Victus : 100
+        "y" : 1250,   # Victus : 870
     },
     "Add card to deck" : {
         "action" : "absolute_click",
         "key" : "!",
-        "x" : 160,
-        "y" : 790,
+        "x" : 200,   # Victus : 160
+        "y" : 1140,   # Victus : 790
     },
     "Remove card from deck" : {
         "action" : "absolute_click",
         "key" : ":",
-        "x" : 360,
-        "y" : 790,
+        "x" : 450,   # Victus : 360
+        "y" : 1140,   # Victus : 790
     },
 }
 global_multi_hotkeys = [ # Global hotkeys can be used outside of masterduel too
@@ -186,7 +186,7 @@ exiting_asked = False
 
 
 if __name__ == "__main__":
-    print("- Hotkeys for Master Duel (v0.2.3) -\n")
+    print("- Hotkeys for Master Duel (v0.2.4 | 2560x1600) -\n")
     print(
         "General :\n"
         "space : Show card infos\n"
@@ -210,6 +210,7 @@ if __name__ == "__main__":
         "shift+alt+q : Exit script\n"
     )
     
+    # Start
     with keyboard.Listener(
         on_press=on_press,
         on_release=on_release
